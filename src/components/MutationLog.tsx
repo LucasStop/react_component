@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useDNAStore, Mutation, DNABase } from '../store/dnaStore';
+import { useDNAStore } from '../store/dnaStore';
 
 const LogContainer = styled.div`
   width: 100%;

@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 import DNAMolecule from './components/DNAMolecule';
 import CharacterAvatar from './components/CharacterAvatar';
 import MutationLog from './components/MutationLog';
-import { useDNAStore } from './store/dnaStore';
 
 const AppContainer = styled.div`
   display: grid;
@@ -27,9 +25,6 @@ const Title = styled.h1`
 `;
 
 function App() {
-  const dnaSequence = useDNAStore(state => state.dnaSequence);
-  const mutations = useDNAStore(state => state.mutations);
-
   return (
     <AppContainer>
       <Title>Simulador de Alterações Genéticas</Title>

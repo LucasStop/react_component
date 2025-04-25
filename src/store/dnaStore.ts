@@ -103,7 +103,7 @@ const initialDNA = createInitialDNA();
 const initialTraits = calculateTraits(initialDNA);
 
 // Criação da loja Zustand
-export const useDNAStore = create<DNAState>((set, get) => ({
+export const useDNAStore = create<DNAState>((set) => ({
   dnaSequence: initialDNA,
   mutations: [],
   traits: initialTraits,

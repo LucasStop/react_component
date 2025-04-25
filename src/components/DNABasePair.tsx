@@ -127,22 +127,22 @@ const DNABasePair: React.FC<Props> = ({ pair, index, onMutate, triggerParticleEf
 
   const handleBaseChange = (position: 'top' | 'bottom', newBase: DNABase) => {
     // Obtém o base complementar
-    let complementaryBase: DNABase;
+    // Removendo variável não utilizada
     switch (newBase) {
       case 'A':
-        complementaryBase = 'T';
+        // complementaryBase = 'T';
         break;
       case 'T':
-        complementaryBase = 'A';
+        // complementaryBase = 'A';
         break;
       case 'C':
-        complementaryBase = 'G';
+        // complementaryBase = 'G';
         break;
       case 'G':
-        complementaryBase = 'C';
+        // complementaryBase = 'C';
         break;
       default:
-        complementaryBase = 'A';
+        // complementaryBase = 'A';
     }
 
     // Determina qual par deve ser atualizado

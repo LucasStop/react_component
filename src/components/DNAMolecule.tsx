@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import DNABasePair from './DNABasePair';
